@@ -1,0 +1,26 @@
+# https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_workbench/#position-controller
+# https://emanual.robotis.com/docs/en/dxl/x/xm430-w210/#control-table-description
+roll:
+  ID: 83
+  Return_Delay_Time: 0
+  Operating_Mode: 3  # Position Control
+  # Both Profile_Acc & Profile_Vel  != 0 gives Trapezoidal position response
+  Profile_Acceleration: 1000 # max 32767, 0 is infinite
+  Profile_Velocity: 10000 # max 32767, 0 is infinite
+  Velocity_Limit: 5 # units = 0.229rpm
+pitch:
+  ID: 82
+  Return_Delay_Time: 0
+  Operating_Mode: 3  # Position Control
+  # Both Profile_Acc & Profile_Vel  != 0 gives Trapezoidal position response
+  Profile_Acceleration: 1000 # max 32767, 0 is infinite
+  Profile_Velocity: 10000 # max 32767, 0 is infinite
+  Velocity_Limit: 5 # units = 0.229rpm
+# yaw:
+#   ID: 81
+#   Return_Delay_Time: 0
+#   Operating_Mode: 3  # Position Control
+#   # Both Profile_Acc & Profile_Vel  != 0 gives Trapezoidal position response
+#   Profile_Acceleration: 1000 # max 32767, 0 is infinite
+#   Profile_Velocity: 10000 # max 32767, 0 is infinite
+#   Velocity_Limit: 5 # units = 0.229rpm

@@ -1,0 +1,7 @@
+<launch>
+
+  <node name="joy" pkg="joy" type="joy_node" output="screen" args="_dev:=/dev/input/js0"/>
+
+  <node name="gimbal_joy" pkg="collimated_gimbal" type="gimbal_joy.py" output="screen"/>
+
+</launch>
